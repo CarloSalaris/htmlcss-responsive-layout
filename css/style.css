@@ -151,6 +151,16 @@ img {
         }
     }
 
+/* ABOUT US */
+
+    /* RESPONSIVE TABLET E DESKTOP */
+    @media all and (min-width: 376px) {
+        #about-us .container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
 
 /* FOOTER */
 
