@@ -53,9 +53,11 @@ button.small-btn {
 }
 
 button.medium-btn {
-    padding: 10px 50px;
+    padding: 10px 60px;
     color: #ffffff;
-    font-size: 1em;
+    font-size: .9em;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 /************************************************
@@ -170,7 +172,7 @@ main {
 #developer .col {
     background-color: #b5ddff;
     border-radius: 20px;
-    padding: 25px;
+    padding: 30px;
 }
 
 #developer .col h3 {
