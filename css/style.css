@@ -1,3 +1,6 @@
+
+/* START FROM SMARTPHONE VERSION */
+
 /*************************************************
     GENERAL STYLES
  *************************************************/
@@ -24,6 +27,11 @@ img {
 
 /* LAYOUT */
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* TEXT */
 
 /************************************************
@@ -34,6 +42,33 @@ img {
     height: 100px;
     background-color: #0084fd;
  }
+
+ header .container {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ header #menu-desktop {
+            display: none;
+        }
+
+    /* RESPONSIVE DESKTOP */
+
+    @media all and (min-width: 811px) {
+
+        header .container {
+            max-width: 1000px;
+        }
+
+        header #menu-mobile {
+            display: none;
+        }
+
+        header #menu-desktop {
+            display: inline-block;
+        }
+    }
+
 
 footer {
     height: 300px;
@@ -55,4 +90,14 @@ footer {
     height: 200px;
     background-color: #9593e6;
     margin-bottom: 30px;
+ }
+
+ .container {
+    height: 100%;
+    background-color: aquamarine;
+ }
+
+ header .container * {
+    min-width: 150px;
+    border: dotted 1px;
  }
