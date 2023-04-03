@@ -28,7 +28,7 @@ img {
 /* LAYOUT */
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -94,6 +94,7 @@ img {
        
         .row {
             display: flex;
+            justify-content: space-between;
         }
         
         #developer .col.wide {
@@ -114,6 +115,42 @@ img {
             justify-content: center;
         }
     }
+
+
+/* TESTIMONIALS */
+
+
+
+
+/* BENEFITS */
+
+#benefits .card {
+    width: 100%;
+}
+
+    /* RESPONSIVE TABLET E DESKTOP */
+
+    @media all and (min-width: 376px) {
+        #benefits .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #benefits .card {
+            min-width: 240px;
+            max-width: 50%;
+        }
+    }
+
+    /* RESPONSIVE DESKTOP */
+
+    @media all and (min-width: 811px) {
+        #benefits .card {
+            max-width: 33%;
+        }
+    }
+
 
 /* FOOTER */
 
@@ -161,5 +198,8 @@ footer {
  .col {
     min-height: 200px;
     border: dotted 1px purple;
+ }
 
+ .card {
+    border: dotted 1px purple;
  }
