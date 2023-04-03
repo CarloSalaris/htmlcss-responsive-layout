@@ -11,10 +11,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
     font-family: 'PT Sans', sans-serif;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 
 img {
@@ -28,6 +39,23 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+button.small-btn {
+    height: 35px;
+    padding: 5px 12px;
+}
+
+button.medium-btn {
+    padding: 10px 50px;
+    color: #ffffff;
+    font-size: 1em;
 }
 
 /************************************************
@@ -93,7 +121,7 @@ ul {
 
     /* RESPONSIVE DESKTOP */
 
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 811px) {
 
         .container {
             max-width: 1000px;
@@ -127,11 +155,6 @@ ul {
 
             #menu-desktop button {
                 background-color: #ffffff;
-                height: 35px;
-                border: none;
-                padding: 5px 12px;
-                border-radius: 18px;
-                cursor: pointer;
             }
 
     }
@@ -139,7 +162,7 @@ ul {
 /* MAIN */
 
 main {
-    margin-top: 100px;
+    margin-top: 110px;
 }
 
 /* DEVELOPER */
@@ -147,7 +170,41 @@ main {
 #developer .col {
     background-color: #b5ddff;
     border-radius: 20px;
+    padding: 25px;
 }
+
+#developer .col h3 {
+    color: #0084fd;
+}
+
+    /* Developer col wide */
+
+    #developer .col.wide {
+        text-align: left;
+        padding-bottom: 0;
+    }
+
+    #developer .col.wide button {
+        background-color: #0084fd;
+        margin-bottom: 30px;
+    }
+
+    #developer .col.wide button .fa-apple {
+        margin-right: 5px;
+    }
+
+    #developer .col.wide .image {
+        width: 260px;
+        height: 290px;
+        position: relative;
+    }
+
+    .col.wide .image img {
+        position: absolute;
+        bottom: 0;
+    }
+
+
 
     /* ONLY FOR SMARTPHONE */
     
@@ -155,6 +212,10 @@ main {
 
         #developer .col {
             margin-bottom: 20px;
+        }
+
+        #developer .col.wide .image {
+            margin: auto;
         }
     }
 
@@ -169,22 +230,42 @@ main {
             grid-template-rows: auto;
             gap: 20px;
         }
-       
+    
         #developer .col.wide {
             grid-column: 1 / span 2;
         }
 
+        #developer .col.wide .image {
+            min-width: 220px;
+            width: 220px;
+            height: 250px;
+        }
+
+    }
+
+    /* RESPONSIVE DESKTOP */
+
+    @media all and (min-width: 811px) {
+        #developer .col.wide {
+            display: flex;
+            align-items: flex-end;
+        } 
+
+        #developer .col.wide .text-block {
+            max-width: 50%;
+            margin-right: 50px;
+        }
     }
 
 /* PLANNING */
 
-    /* RESPONSIVE DESKTOP */
-    @media all and (min-width: 768px) {
-        #planning .container {
-            display: flex;
-            justify-content: center;
-        }
+/* RESPONSIVE DESKTOP */
+@media all and (min-width: 811px) {
+    #planning .container {
+        display: flex;
+        justify-content: center;
     }
+}
 
 
 /* TESTIMONIALS */
@@ -215,7 +296,7 @@ main {
 
     /* RESPONSIVE DESKTOP */
 
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 811px) {
         #benefits .card {
             max-width: 33%;
         }
@@ -250,7 +331,7 @@ footer {
     DEBUG
  ************************************************/
 
- section {
+ /* section {
     min-height: 200px;
     background-color: #9593e6;
     border: solid 1px;
@@ -281,4 +362,4 @@ footer {
 
  .card {
     border: dotted 1px purple;
- }
+ } */
