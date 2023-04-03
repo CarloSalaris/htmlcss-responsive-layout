@@ -21,6 +21,15 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /************************************************
     UTILITIES
  ************************************************/
@@ -28,7 +37,7 @@ img {
 /* LAYOUT */
 
 .container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
 }
@@ -55,22 +64,35 @@ img {
  /* HEADER */
 
  header {
-    height: 100px;
+    height: 70px;
     background-color: #0084fd;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+
+    
  }
 
  header .container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+ }
+
+ header #menu-mobile {
+    font-size: 25px;
  }
 
  header #menu-desktop {
-            display: none;
-        }
+    display: none;
+ }
 
     /* RESPONSIVE DESKTOP */
 
-    @media all and (min-width: 769px) {
+    @media all and (min-width: 768px) {
 
         .container {
             max-width: 1000px;
@@ -80,18 +102,39 @@ img {
             display: none;
         }
 
-        header #menu-desktop {
-            display: inline-block;
-        }
+            /* Menu desktop */
+            header #menu-desktop {
+                display: flex;
+            }
+
+            header #menu-desktop ul {
+                display: flex;
+            }
+
+            #menu-desktop ul li {
+                margin-right: 20px;
+            }
+
+            #menu-desktop button {
+                background-color: #ffffff;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 12px;
+            }
+
     }
 
 /* MAIN */
+
+main {
+    margin-top: 100px;
+}
 
 /* DEVELOPER */
 
     /* RESPONSIVE TABLET E DESKTOP */
 
-    @media all and (min-width: 481px) {
+    @media all and (min-width: 480px) {
 
         #developer .container {
             display: grid;
@@ -109,7 +152,7 @@ img {
 /* PLANNING */
 
     /* RESPONSIVE DESKTOP */
-    @media all and (min-width: 769px) {
+    @media all and (min-width: 768px) {
         #planning .container {
             display: flex;
             justify-content: center;
@@ -130,7 +173,7 @@ img {
 
     /* RESPONSIVE TABLET E DESKTOP */
 
-    @media all and (min-width: 481px) {
+    @media all and (min-width: 480px) {
         #benefits .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -145,7 +188,7 @@ img {
 
     /* RESPONSIVE DESKTOP */
 
-    @media all and (min-width: 769px) {
+    @media all and (min-width: 768px) {
         #benefits .card {
             max-width: 33%;
         }
@@ -154,7 +197,7 @@ img {
 /* ABOUT US */
 
     /* RESPONSIVE TABLET E DESKTOP */
-    @media all and (min-width: 481px) {
+    @media all and (min-width: 480px) {
         #about-us .container {
             display: flex;
             justify-content: center;
@@ -189,7 +232,7 @@ footer {
 
  .container {
     height: 100%;
-    background-color: aquamarine;
+    border: solid 2px aquamarine;
  }
 
  main .container div {
@@ -197,7 +240,6 @@ footer {
  }
 
  header .container * {
-    min-width: 150px;
     border: dotted 1px;
  }
 
