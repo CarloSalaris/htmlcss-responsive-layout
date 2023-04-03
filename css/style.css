@@ -85,6 +85,7 @@ img {
 /* DEVELOPER */
 
     /* RESPONSIVE TABLET E DESKTOP */
+
     @media all and (min-width: 376px) {
        
         .row {
@@ -100,7 +101,15 @@ img {
         }
     }
 
+/* PLANNING */
 
+    /* RESPONSIVE DESKTOP */
+    @media all and (min-width: 811px) {
+        #planning .container {
+            display: flex;
+            justify-content: center;
+        }
+    }
 
 /* FOOTER */
 
@@ -130,6 +139,10 @@ footer {
  .container {
     height: 100%;
     background-color: aquamarine;
+ }
+
+ main .container div {
+    min-height: 200px;
  }
 
  header .container * {
