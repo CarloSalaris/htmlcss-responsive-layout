@@ -60,6 +60,8 @@ button.medium-btn {
     letter-spacing: 2px;
 }
 
+
+
 /************************************************
     UTILITIES
  ************************************************/
@@ -172,7 +174,7 @@ main {
 #developer .col {
     background-color: #b5ddff;
     border-radius: 20px;
-    padding: 30px;
+    padding: 25px;
 }
 
 #developer .col h3 {
@@ -193,6 +195,8 @@ main {
 
     #developer .col.wide button .fa-apple {
         margin-right: 5px;
+        font-size: inherit;
+        color: inherit;
     }
 
     #developer .col.wide .image {
@@ -205,6 +209,16 @@ main {
         position: absolute;
         bottom: 0;
     }
+
+    /* Developer col narrow */
+
+    #developer .col.narrow i {
+        color: #0084fd;
+        margin: 25px 0;
+        font-size: 5em;
+    }
+
+
 
 
 
