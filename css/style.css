@@ -32,11 +32,22 @@ img {
     margin: 0 auto;
 }
 
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-lavander {
+    background-color: #9792e4;
+}
+
+
 /* TEXT */
 
 /************************************************
     SITE SECTIONS
  ************************************************/
+
+ /* HEADER */
 
  header {
     height: 100px;
@@ -56,7 +67,7 @@ img {
 
     @media all and (min-width: 811px) {
 
-        header .container {
+        .container {
             max-width: 1000px;
         }
 
@@ -69,6 +80,29 @@ img {
         }
     }
 
+/* MAIN */
+
+/* DEVELOPER */
+
+    /* RESPONSIVE TABLET E DESKTOP */
+    @media all and (min-width: 376px) {
+       
+        .row {
+            display: flex;
+        }
+        
+        #developer .col.wide {
+            width: 60%;
+        }
+
+        #developer .col {
+            width: 30%;
+        }
+    }
+
+
+
+/* FOOTER */
 
 footer {
     height: 300px;
@@ -87,8 +121,9 @@ footer {
  ************************************************/
 
  section {
-    height: 200px;
+    min-height: 200px;
     background-color: #9593e6;
+    border: solid 1px;
     margin-bottom: 30px;
  }
 
@@ -100,4 +135,14 @@ footer {
  header .container * {
     min-width: 150px;
     border: dotted 1px;
+ }
+
+ .row {
+    border: dotted 1px purple;
+ }
+
+ .col {
+    min-height: 200px;
+    border: dotted 1px purple;
+
  }
