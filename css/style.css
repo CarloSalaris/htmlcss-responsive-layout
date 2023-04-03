@@ -18,6 +18,15 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+section {
+    padding: 60px 0;
+ }
+
+h2 {
+    font-size: 2.1em;
+    margin-bottom: 45px;
+} 
+
 h3 {
     font-size: 1.5em;
     margin-bottom: 25px;
@@ -76,10 +85,12 @@ button.medium-btn {
 
 .bg-white {
     background-color: #ffffff;
+    color: #333333;
 }
 
 .bg-lavander {
     background-color: #9792e4;
+    color: #ffffff;
 }
 
 .card {
@@ -166,13 +177,14 @@ button.medium-btn {
 /* MAIN */
 
 main {
-    margin-top: 110px;
+    margin-top: 60px;
 }
 
 /* DEVELOPER */
 
 #developer .col {
     background-color: #b5ddff;
+    color: #333333;
     border-radius: 20px;
     padding: 25px;
 }
@@ -219,15 +231,12 @@ main {
     }
 
 
-
-
-
     /* ONLY FOR SMARTPHONE */
     
     @media all and (max-width: 479px) {
 
         #developer .col {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         #developer .col.wide .image {
@@ -274,6 +283,25 @@ main {
     }
 
 /* PLANNING */
+
+/* Blocco Strategic planning */
+#planning #strat-plan {
+    text-align: left;
+}
+
+#planning #strat-plan img {
+    margin-bottom: 70px;
+}
+
+/* Blocco App Developement */
+#planning #app-dev {
+    padding: 30px;
+    border-radius: 50px;
+}
+
+#planning #app-dev p {
+    font-size: 1.1em;
+}
 
 /* RESPONSIVE DESKTOP */
 @media all and (min-width: 811px) {
@@ -351,7 +379,6 @@ footer {
     min-height: 200px;
     background-color: #9593e6;
     border: solid 1px;
-    margin-bottom: 30px;
  }
 
  .container {
