@@ -28,7 +28,7 @@ img {
 /* LAYOUT */
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
@@ -70,7 +70,7 @@ img {
 
     /* RESPONSIVE DESKTOP */
 
-    @media all and (min-width: 811px) {
+    @media all and (min-width: 769px) {
 
         .container {
             max-width: 1000px;
@@ -91,15 +91,17 @@ img {
 
     /* RESPONSIVE TABLET E DESKTOP */
 
-    @media all and (min-width: 376px) {
+    @media all and (min-width: 481px) {
        
         .row {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 25px;
+                       
         }
         
         #developer .col.wide {
-            width: 60%;
+            width: calc(60% + 25px);
         }
 
         #developer .col {
@@ -110,7 +112,7 @@ img {
 /* PLANNING */
 
     /* RESPONSIVE DESKTOP */
-    @media all and (min-width: 811px) {
+    @media all and (min-width: 769px) {
         #planning .container {
             display: flex;
             justify-content: center;
@@ -131,7 +133,7 @@ img {
 
     /* RESPONSIVE TABLET E DESKTOP */
 
-    @media all and (min-width: 376px) {
+    @media all and (min-width: 481px) {
         #benefits .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -146,7 +148,7 @@ img {
 
     /* RESPONSIVE DESKTOP */
 
-    @media all and (min-width: 811px) {
+    @media all and (min-width: 769px) {
         #benefits .card {
             max-width: 33%;
         }
@@ -155,7 +157,7 @@ img {
 /* ABOUT US */
 
     /* RESPONSIVE TABLET E DESKTOP */
-    @media all and (min-width: 376px) {
+    @media all and (min-width: 481px) {
         #about-us .container {
             display: flex;
             justify-content: center;
