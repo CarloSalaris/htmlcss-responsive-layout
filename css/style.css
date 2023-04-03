@@ -92,21 +92,18 @@ img {
     /* RESPONSIVE TABLET E DESKTOP */
 
     @media all and (min-width: 481px) {
-       
-        .row {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-                       
+
+        #developer .container {
+            display: grid;
+            grid-template-columns: calc((100% - 40px) / 3) calc((100% - 40px) / 3) calc((100% - 40px) / 3);
+            grid-template-rows: auto;
+            gap: 20px;
         }
-        
+       
         #developer .col.wide {
-            width: calc(60% + 25px);
+            grid-column: 1 / span 2;
         }
 
-        #developer .col {
-            width: 30%;
-        }
     }
 
 /* PLANNING */
