@@ -20,9 +20,9 @@ body {
 }
 
 section {
-    padding: 60px 0;
+    padding: 65px 0;
  }
-
+    
 h2 {
     font-size: 2.1em;
     margin-bottom: 45px;
@@ -259,6 +259,10 @@ main {
 
     @media all and (min-width: 480px) {
 
+        #developer {
+            margin-bottom: 40px;
+        }
+
         #developer .container {
             display: grid;
             grid-template-columns: calc((100% - 40px) / 3) calc((100% - 40px) / 3) calc((100% - 40px) / 3);
@@ -308,9 +312,10 @@ main {
     margin-bottom: 70px;
 }
 
+
 /* Blocco App Developement */
 #planning #app-dev {
-    padding: 30px;
+    padding: 35px;
     border-radius: 50px;
 }
 
@@ -318,13 +323,62 @@ main {
     font-size: 1.1em;
 }
 
-/* RESPONSIVE DESKTOP */
-@media all and (min-width: 811px) {
-    #planning .container {
-        display: flex;
-        justify-content: center;
-    }
+#planning #app-dev button#arrow {
+    margin-top: 35px;
+    font-size: 1em;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:#9792e4 ;
 }
+
+    /* RESPONSIVE TABLET E DESKTOP */
+
+    @media all and (min-width: 480px) {
+        #planning {
+            padding-top: 130px;
+        }
+
+        #planning #strat-plan h2 {
+            font-size: 4em;
+        }
+
+        #planning #strat-plan img {
+            margin-bottom: 120px;
+        }
+    }
+
+
+    /* RESPONSIVE DESKTOP */
+    @media all and (min-width: 811px) {
+
+        #planning .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+       
+        #planning .container >* {
+            max-width: 410px;
+            margin-right: 65px;
+        }
+
+        #planning #strat-plan {
+            margin-bottom: 0;
+        }
+        
+        #planning #strat-plan h2 {
+            font-size: 2.1em;
+        }
+
+        #planning #app-dev img {
+            max-width: 275px;
+        }
+
+        
+
+
+    }
 
 
 /* TESTIMONIALS */
