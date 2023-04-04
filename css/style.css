@@ -22,11 +22,11 @@ body {
 section {
     padding: 65px 0;
  }
-    
+
 h2 {
     font-size: 2.1em;
     margin-bottom: 45px;
-} 
+}
 
 h3 {
     font-size: 1.4em;
@@ -131,7 +131,7 @@ button.medium-btn {
     width: 100%;
     z-index: 900;
 
-    
+
  }
 
  header .container {
@@ -248,7 +248,7 @@ main {
 
 
     /* ONLY FOR SMARTPHONE */
-    
+
     @media all and (max-width: 479px) {
 
         #developer .col {
@@ -275,7 +275,7 @@ main {
             grid-template-rows: auto;
             gap: 20px;
         }
-    
+
         #developer .col.wide {
             grid-column: 1 / span 2;
         }
@@ -293,7 +293,7 @@ main {
     @media all and (min-width: 811px) {
         #developer .col.wide {
             display: flex;
-        } 
+        }
 
         #developer .col.wide .text-block {
             max-width: 50%;
@@ -367,7 +367,7 @@ main {
             justify-content: center;
             align-items: flex-end;
         }
-       
+
         #planning .container >* {
             max-width: 410px;
             margin-right: 65px;
@@ -376,7 +376,7 @@ main {
         #planning #strat-plan {
             margin-bottom: 0;
         }
-        
+
         #planning #strat-plan h2 {
             font-size: 2.1em;
         }
@@ -407,7 +407,7 @@ main {
     width: 200px;
     height: 200px;
     margin: 0 auto 15px;
-    
+
 }
 
 #testimonials .card .image img {
@@ -433,7 +433,7 @@ main {
     /* RESPONSIVE TABLET E DESKTOP */
 
     @media all and (min-width: 480px) {
-        
+
         #testimonials .card {
             display: flex;
             align-items: center;
@@ -459,6 +459,10 @@ main {
     width: 100%;
 }
 
+#benefits .card button {
+    background-color: #9792e4;
+}
+
     /* RESPONSIVE TABLET E DESKTOP */
 
     @media all and (min-width: 480px) {
@@ -466,11 +470,12 @@ main {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 30px;
+
         }
 
         #benefits .card {
-            min-width: 240px;
-            max-width: 50%;
+            width: calc((100% - 30px) / 2);
         }
     }
 
@@ -478,7 +483,7 @@ main {
 
     @media all and (min-width: 811px) {
         #benefits .card {
-            max-width: 33%;
+            width: calc((100% - 60px) / 3);
         }
     }
 
