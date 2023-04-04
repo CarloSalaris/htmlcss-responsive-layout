@@ -457,10 +457,22 @@ main {
 
 #benefits .card {
     width: 100%;
+    text-align: left;
+    padding: 35px;
+}
+
+#benefits .card h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#benefits .card h3 {
+    font-size: 1.9em;
 }
 
 #benefits .card button {
     background-color: #9792e4;
+    margin-top: 30px;
 }
 
     /* RESPONSIVE TABLET E DESKTOP */
