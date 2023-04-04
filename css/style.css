@@ -113,6 +113,23 @@ button.medium-btn {
     border-radius: 50px;
 }
 
+/* circular img */
+
+.image.circle {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+
+}
+
+.image.circle img {
+    width: inherit;
+    height: inherit;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+
 
 /* TEXT */
 
@@ -401,20 +418,6 @@ main {
 
 #testimonials .text-block {
     margin-bottom: 20px;
-}
-
-#testimonials .card .image {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 15px;
-
-}
-
-#testimonials .card .image img {
-    width: inherit;
-    height: inherit;
-    object-fit:cover;
-    border-radius: 50%;
 }
 
 #testimonials .card p {
