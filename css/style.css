@@ -537,7 +537,7 @@ main {
 } 
 
 #about-us .image-block strong {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #about-us .image-block button {
@@ -551,18 +551,27 @@ main {
     
     @media all and (min-width: 480px) {
         #about-us .container {
+            width: 80%;
             display: flex;
             justify-content: center;
+            padding-top: 40px;
         }
 
         #about-us .text-block {
-            max-width: 50%;
-            margin-right: 5vw;
+            /* width: 300px; */
+            margin-right: 6vw;
             
         }
     
         #about-us .image-block {
-            width: 265px;
+            width: 250px;
+        }
+
+        #about-us .image.circle {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 15px;
+        
         }
 
         #about-us .text-block h2 {
@@ -575,6 +584,7 @@ main {
     @media all and (min-width: 810px) {
 
         #about-us .text-block {
+            width: 65%;
             max-width: 710px;
         }
     }
