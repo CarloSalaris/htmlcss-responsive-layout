@@ -504,6 +504,20 @@ main {
 
 /* ABOUT US */
 
+#about-us >* {
+    text-align: left;
+}
+
+#about-us .text-block h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#about-us .text-block p {
+    margin-bottom: 50px;
+    line-height: 2;
+}
+
     /* RESPONSIVE TABLET E DESKTOP */
     @media all and (min-width: 480px) {
         #about-us .container {
