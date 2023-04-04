@@ -98,13 +98,19 @@ button.medium-btn {
     color: #333333;
 }
 
+.bg-white h2, .bg-white h3 {
+    color: #9792e4;
+}
+
 .bg-lavander {
     background-color: #9792e4;
     color: #ffffff;
 }
 
 .card {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    padding: 30px 20px;
+    border-radius: 50px;
 }
 
 
@@ -319,6 +325,10 @@ main {
     border-radius: 50px;
 }
 
+#planning #app-dev h3 {
+    color: black;
+}
+
 #planning #app-dev p {
     font-size: 1.1em;
 }
@@ -375,13 +385,70 @@ main {
             max-width: 275px;
         }
 
-        
-
-
     }
 
 
 /* TESTIMONIALS */
+
+#testimonials {
+    font-size: 1.1em;
+}
+
+#testimonials span {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#testimonials .text-block {
+    margin-bottom: 20px;
+}
+
+#testimonials .card .image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+    
+}
+
+#testimonials .card .image img {
+    width: inherit;
+    height: inherit;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+#testimonials .card p {
+    margin-bottom: 20px;
+}
+
+#testimonials .card p i {
+    font-size: 1.2em;
+    margin: 0 5px;
+}
+
+#testimonials .card strong {
+    font-size: 1.1em;
+}
+
+    /* RESPONSIVE TABLET E DESKTOP */
+
+    @media all and (min-width: 480px) {
+        
+        #testimonials .card {
+            display: flex;
+            align-items: center;
+        }
+
+        #testimonials .card .image {
+            width: 200px;
+        }
+
+        #testimonials .card .text-block {
+            width: calc(100% - 200px);
+            margin-left:4vw;
+            text-align: left;
+        }
+    }
 
 
 
