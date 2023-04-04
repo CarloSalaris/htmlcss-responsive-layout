@@ -16,7 +16,7 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.1em;
+    font-size: 16px;
 }
 
 section {
@@ -361,6 +361,10 @@ main {
     background-color:#9792e4 ;
 }
 
+#planning #app-dev button#arrow i {
+    margin: 0;
+}
+
     /* RESPONSIVE TABLET E DESKTOP */
 
     @media all and (min-width: 480px) {
@@ -659,6 +663,21 @@ h2.yellow {
 footer {
     height: 235px;
     background-color: #333333;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+footer .container {
+    max-width: 420px;
+}
+
+footer p {
+    margin-bottom: 60px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #9792e4;
 }
 
 
