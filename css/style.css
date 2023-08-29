@@ -464,6 +464,13 @@ main {
 
 /* BENEFITS */
 
+#benefits .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
 #benefits .card {
     width: 100%;
     text-align: left;
@@ -489,14 +496,7 @@ main {
     /* RESPONSIVE TABLET E DESKTOP */
 
     @media all and (min-width: 480px) {
-        #benefits .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-
-        }
-
+        
         #benefits .card {
             width: calc((100% - 30px) / 2);
         }
